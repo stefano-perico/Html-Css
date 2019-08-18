@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/4d8bf3b3d9.js"></script>
 </head>
 <body>
+
+    <nav id="overlay">
+        <i class="fas fa-times close-btn" id="close-menu"></i>
+
+        <ul>
+            <li>
+                <a href="#">home</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">about us</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">services</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">contact</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="#" class="logo">mysite</a>
+
+        <i class="fas fa-bars menu-btn" id="open-menu"></i>
+    </header>
+
+    <section>
+        <h1>this is fancy</h1>
+    </section>
+
+    <script>
+        const $overlay = document.getElementById('overlay');
+        const $closeMenu = document.getElementById('close-menu');
+        const $openMEnu = document.getElementById('open-menu');
+
+        $openMEnu.addEventListener('click', function () {
+            $overlay.classList.add('show-menu');
+        });
+
+        $closeMenu.addEventListener('click', function () {
+            $overlay.classList.remove('show-menu');
+        });
+
+    </script>
 
 </body>
 </html>
